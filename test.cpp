@@ -43,12 +43,12 @@ int XOROperation (int *arr, int size, int X, int num) // this function does not 
         // print the array, just for
         for (int j = 0; j < size; j++)
         {
-             cout << "arr: " << arr[j]<<endl;
+             cout << "arr: " << arr[j] << " ";
         }
         // find the number of equal integers
         K = EqualNumbers(arr, size);
         maxNum = K;
-        cout << "maxNum: " << maxNum << endl; // print it
+        cout << "\nmaxNum: " << maxNum << endl; // print it
         // check if found max number for new array has more equal integers than the original or previous one
         if (maxNum > num) {
             num = maxNum;
@@ -60,7 +60,7 @@ int XOROperation (int *arr, int size, int X, int num) // this function does not 
             cout << "oper1: " << oper << endl;
         }
     }
-    cout << "Num: " << maxNum << endl;
+    cout << "Final maxNum: " << num << endl;
     return oper;
 }
 
