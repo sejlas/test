@@ -40,13 +40,13 @@ int main() {
     int A[N];
     for (int i = 0; i < T; i++) {
         cin >> N >> X; // Enter N and X
+        // enter values of array
+        for (int j = 0; j < N; j++) {
+            cin >> A[j];
+            cout << "Array: " << A[j] <<" ";
+        }
+        cout << "\n" << "N: " << N << " X: " << X << endl;
+        ans =  EqualNumbers(A, N); // kad se ovo izbrise i linija ispod i napise samo "cout << EqualNumbers(A, N);" bude okej sve
+        cout << ans << endl;
     }
-    // enter values of array
-    for (int j = 0; j < N; j++) {
-        cin >> A[j];
-        cout << "Array: " << A[j] <<" ";
-    }
-    cout << "\n" << "N: " << N << " X: " << X << endl;
-    ans =  EqualNumbers(A, N); // kad se ovo izbrise i linija ispod i napise samo "cout << EqualNumbers(A, N);" bude okej sve
-    cout << ans << endl;
 }
